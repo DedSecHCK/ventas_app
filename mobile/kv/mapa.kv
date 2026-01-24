@@ -1,0 +1,26 @@
+<MapaScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        
+        MDTopAppBar:
+            title: "Mapa de Clientes"
+            elevation: 10
+            left_action_items: [["arrow-left", lambda x: root.go_back()]]
+            
+        MDLabel:
+            text: "Vista de Mapa"
+            halign: "center"
+            font_style: "H5"
+            
+        MDLabel:
+            text: "Aquí se mostrará el mapa con ubicaciones de clientes"
+            halign: "center"
+            size_hint_y: None
+            height: self.texture_size[1]
+            
+        MDLabel:
+            id: location_label
+            text: "Ubicación actual: Cargando..."
+            halign: "center"
+            size_hint_y: None
+            height: self.texture_size[1]

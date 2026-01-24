@@ -1,0 +1,87 @@
+<DashboardScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        
+        MDTopAppBar:
+            title: "Dashboard - Ventas App"
+            elevation: 10
+            right_action_items: [["logout", lambda x: root.logout()]]
+            
+        MDScrollView:
+            MDGridLayout:
+                cols: 2
+                adaptive_height: True
+                padding: 20
+                spacing: 20
+                
+                MDCard:
+                    orientation: "vertical"
+                    padding: 20
+                    size_hint_y: None
+                    height: 200
+                    elevation: 5
+                    on_release: root.navigate_to("clientes")
+                    
+                    MDIcon:
+                        icon: "account-group"
+                        halign: "center"
+                        font_size: 64
+                        
+                    MDLabel:
+                        text: "Clientes"
+                        halign: "center"
+                        font_style: "H6"
+                        
+                MDCard:
+                    orientation: "vertical"
+                    padding: 20
+                    size_hint_y: None
+                    height: 200
+                    elevation: 5
+                    on_release: root.navigate_to("creditos")
+                    
+                    MDIcon:
+                        icon: "cash-multiple"
+                        halign: "center"
+                        font_size: 64
+                        
+                    MDLabel:
+                        text: "Créditos"
+                        halign: "center"
+                        font_style: "H6"
+                        
+                MDCard:
+                    orientation: "vertical"
+                    padding: 20
+                    size_hint_y: None
+                    height: 200
+                    elevation: 5
+                    on_release: root.navigate_to("pagos")
+                    
+                    MDIcon:
+                        icon: "currency-usd"
+                        halign: "center"
+                        font_size: 64
+                        
+                    MDLabel:
+                        text: "Pagos"
+                        halign: "center"
+                        font_style: "H6"
+                        
+                MDCard:
+                    orientation: "vertical"
+                    padding: 20
+                    size_hint_y: None
+                    height: 200
+                    elevation: 5
+                    on_release: root.navigate_to("mapa")
+                    
+                    MDIcon:
+                        icon: "map-marker"
+                        halign: "center"
+                        font_size: 64
+                        
+                    MDLabel:
+                        text: "Mapa"
+                        halign: "center"
+                        font_style: "H6"
