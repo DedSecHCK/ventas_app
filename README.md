@@ -2,6 +2,8 @@
 
 Aplicación móvil para gestión de ventas, créditos y cobranzas.
 
+![Build Status](https://github.com/DedSecHCK/ventas_app/workflows/Build%20Android%20APK/badge.svg)
+
 ## 🚀 Características
 
 - Gestión de clientes
@@ -14,8 +16,7 @@ Aplicación móvil para gestión de ventas, créditos y cobranzas.
 
 Los APK compilados están disponibles en:
 
-- [Releases](../../releases) - Versiones estables
-- [Actions](../../actions) - Compilaciones automáticas
+- [Actions](https://github.com/DedSecHCK/ventas_app/actions) - Compilaciones automáticas
 
 ## 🛠️ Desarrollo
 
