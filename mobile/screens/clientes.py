@@ -37,7 +37,7 @@ class ClientesScreen(Screen):
     
     def show_add_dialog(self):
         """Show dialog to add new client"""
-        # Create form content
+    
         content = MDBoxLayout(
             orientation="vertical",
             spacing=15,
@@ -78,12 +78,12 @@ class ClientesScreen(Screen):
     def save_cliente(self, *args):
         """Save new client to local database"""
         try:
-            # Validate required fields
+            
             if not self.nombre_field.text or not self.apellido_field.text or not self.cedula_field.text:
                 print("Error: Nombre, apellido y cédula son requeridos")
                 return
             
-            # Create cliente data
+            
             cliente_data = {
                 'nombre': self.nombre_field.text,
                 'apellido': self.apellido_field.text,
@@ -93,7 +93,7 @@ class ClientesScreen(Screen):
                 'email': self.email_field.text
             }
             
-            # Save to database
+            
             result = cliente_repository.create(cliente_data)
             if result:
                 print(f"Cliente guardado: {result}")
